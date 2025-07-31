@@ -59,3 +59,28 @@ div.title-text{
     align-content: center;
     
 }
+img{
+    width: 150px;
+}
+div.div-information{
+    display: flex;
+    flex: auto;
+    border: solid red 1px;
+    flex-direction: column;
+    align-items: center;
+}
+h2.div-information{
+    padding: 25px;
+}
+div.img-org{
+    display: flex;
+    flex: auto;
+    justify-content: space-between;
+    width: 800px;    
+}
+div.p-org{
+    display: flex;
+    flex: auto;
+    justify-content: space-between;   
+    width: 800px;
+}
