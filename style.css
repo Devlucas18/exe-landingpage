@@ -2,85 +2,198 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .flex-menubar {
     color: black;
     display: flex;
-    flex: auto;
     justify-content: space-around;
     align-items: flex-start;
+    height: fit-content;
 }
-a {
+a.menubar {
     margin: 12px;
     text-decoration: solid;
     color: #E5E7EB;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
 }
-span{
+span.menubar {
     margin: 10px;
     color: #E5E7EB;
     font-size: 24px;
 }
-nav{
+nav.menubar {
     display: flex;
 }
 header{
     background-color: #1F2937;
-    height: 400px;
-
+    height: 750px;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+
 
 div.title-head {
     display: flex;
-    flex: auto;
-    height: 346px;
-    align-content: center;
-    margin-left: 280px;
+    align-self: center;
+    margin-top: 200px;
+    width: 600px;
+    align-items: center;
+    justify-content: space-between;
+}
+div.title-text{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+h1.title-text{
+    color: #F9FAF8;
+    width: auto;
 }
 p.title-text{
-    width: 300px;
+    color: #F9FAF8;
+    font-size: 24px;
+    width: auto;
+    height: auto;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 button.title-text{
-    width: 75px;
+    height: fit-content;
+    width: 120px;
+    padding: 10px;
+    background-color: #4480f8;
+    border: solid #F9FAF8 2px;
+    color: #F9FAF8;
+    border-radius: 10px;
 }
 img.title-head {
+    border-radius: 20px;
+    width: 150px;
+    height: fit-content;
+}
+
+
+
+
+img.imgitem{
     align-self:center;
     justify-self: flex-end;
     width: 150px;
-}
-h1.title-text{
-    width: 160px;
-}
-div.title-text{
-    margin-right: 10px;
-    align-content: center;
-    
-}
-img{
-    width: 150px;
+    border-radius: 20px;
 }
 div.div-information{
     display: flex;
     flex: auto;
-    border: solid red 1px;
+    border: solid black 1px;
     flex-direction: column;
     align-items: center;
+    height: 450px;
 }
 h2.div-information{
     padding: 25px;
+    font-size: 36px;
+    color: #1F2937;
 }
 div.img-org{
     display: flex;
     flex: auto;
     justify-content: space-between;
-    width: 800px;    
+    width: 800px;
 }
-div.p-org{
+div.item {
+    width: 150px;
+    height: min-content;
+    margin-top: 50px;
+
+}
+
+
+div.motivation-text {
+    background-color: #E5E7EB;
+    height: 400px;
     display: flex;
     flex: auto;
-    justify-content: space-between;   
-    width: 800px;
+    justify-content: center;
+    align-items: center;
+}
+h3.motivation {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: lighter;
+
+}
+p.motivation {
+    color: #1F2937;
+    font-weight: bold;
+    width: fit-content;
+
+
+}
+div.motivation {
+    margin-left: 350px;
+    margin-right: 350px;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+div.pre-footer {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+div.bluebox{
+    display: flex;
+    flex: auto;
+    height: 150px;
+    margin-left: 175px;
+    margin-right: 175px;
+    justify-content: center;
+    align-items: center;
+    background-color: #4480f8;
+    border-radius: 20px;
+}
+div.textbox{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-right: 70px;
+}
+p.blueboxtitle {
+    width: max-content;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+p.blueboxtext {
+    width: fit-content;
+    font-size: 18px;
+    color: #e5e7ebbe;
+}
+button.boxlogin {
+    height: fit-content;
+    width: 75px;
+    padding: 10px;
+    background-color: transparent;
+    border: solid #F9FAF8 2px;
+    color: #F9FAF8;
+    border-radius: 10px;
+}
+
+footer {
+    border: solid blue 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    background-color: #1F2937;
+    color: white;
+
 }
